@@ -52,3 +52,7 @@ export default tseslint.config({
   },
 })
 ```
+
+### ------------------------------------PROGRESS NOTES--------------------------------------
+
+1. FINISHED LESSON 1: LEARNED COMPONENTS, MAP TO ITERATE ARRAYS, CHILDREN, STYLE VIA TAILWIND 
