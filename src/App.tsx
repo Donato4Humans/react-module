@@ -5,9 +5,13 @@ function App() {
 
   return (
     <>
-        <MyComponent text = {'hello react1'}/>
-        <MyComponent text = {'hello react2'}/>
-        <MyComponent text = {'hello react3'}/>
+        <MyComponent title = {'hello react1'}>
+            CHILD WORKING
+        </MyComponent >
+        <MyComponent title = {'hello react2'}>
+        {/*empty children = optional member*/}
+        </MyComponent>
+        <MyComponent title = {'hello react3'}/>
     </>
   )
 }
