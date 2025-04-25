@@ -1,16 +1,14 @@
 import './App.css';
-import {coursesTitleArray} from "./data/coursesList.ts";
-import MyComponent from "./components/MyComponent.tsx";
+import {CoursesComponent} from "./components/courses-component/CoursesComponent.tsx";
 
-function App() {
-
+const App = () => {
   return (
     <>
         {
-            coursesTitleArray.map((courseTitle, index) => <MyComponent key={index} courseTitle={courseTitle}/>)
+            <CoursesComponent/>
         }
     </>
-  )
+  );
 }
 
 export default App;
