@@ -1,11 +1,11 @@
 import './App.css';
-import {FamilyComponent} from "./components/family-component/FamilyComponent.tsx";
+import {CoursesComponent} from "./components/courses-component/CoursesComponent.tsx";
 
 const App = () => {
   return (
     <>
         {
-            <FamilyComponent/>
+            <CoursesComponent/>
         }
     </>
   );
