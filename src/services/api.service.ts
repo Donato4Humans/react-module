@@ -1,10 +1,10 @@
-import {IPost} from "../models/IPost.ts";
+import {IComment} from "../models/IComment.ts";
 
-const getPosts = async (): Promise<IPost[]> => {
+const getComments = async (): Promise<IComment[]> => {
     return await fetch(import.meta.env.VITE_API_URL)
         .then(value => value.json());
 }
 
 export {
-    getPosts
+    getComments
 };

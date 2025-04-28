@@ -1,10 +1,10 @@
 import './App.css';
-import PostsComponent from "./components/posts-component/PostsComponent.tsx";
+import CommentsComponent from "./components/comments-component/CommentsComponent.tsx";
 
 const App = () => {
   return (
     <>
-        <PostsComponent/>
+        <CommentsComponent/>
     </>
   );
 };
