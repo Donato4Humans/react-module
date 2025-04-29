@@ -2,15 +2,14 @@ import './comment-component-style.css'
 import {FC} from "react";
 import {IComment} from "../../models/IComment.ts";
 
-type PostPropsType = {
+type CommentPropsType = {
     comment: IComment
 }
 
-const CommentComponent: FC<PostPropsType> = ({comment:{postId, id, name, email, body}}) => {
+const CommentComponent: FC<CommentPropsType> = ({comment:{postId, id, body}}) => {
     return (
         <div className='border-2 border-amber-200'>
-             <h3>postId: {postId}</h3>
-             <p>Id: {id}, name: {name}, email: {email}</p>
+             <h3>postId: {postId}, id: {id}</h3>
              <p>body : {body}</p>
         </div>
     );
