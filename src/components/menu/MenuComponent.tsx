@@ -1,14 +1,13 @@
+import './menu.css'
 import {Link} from "react-router-dom";
 
 const MenuComponent = () => {
     return (
         <div>
             <ul>
-                <li><Link to={'/'}>home page</Link></li>
-                <hr/>
-                <li><Link to={'/a'}>A page</Link></li>
-                <hr/>
-                <li><Link to={'/b'}>B page</Link></li>
+                <li><Link to={''}>HOME</Link></li>
+                <li><Link to={'users'}>USERS</Link></li>
+                <li><Link to={'posts'}>POSTS</Link></li>
             </ul>
         </div>
     );
