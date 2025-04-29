@@ -1,14 +1,10 @@
 import './App.css';
-import CommentsComponent from "./components/comments-component/CommentsComponent.tsx";
-import PostsComponent from "./components/posts-component/PostsComponent.tsx";
-import TodosComponent from "./components/todos-component/TodosComponent.tsx";
+import ProductsComponent from "./components/products-component/ProductsComponent.tsx";
 
 const App = () => {
   return (
     <>
-        <TodosComponent/>
-        <PostsComponent/>
-        <CommentsComponent/>
+        <ProductsComponent/>
     </>
   );
 };
