@@ -52,3 +52,8 @@ export default tseslint.config({
   },
 })
 ```
+------------------------------------PROGRESS NOTES--------------------------------------
+
+1. FINISHED LESSON 1: LEARNED COMPONENTS, MAP TO ITERATE ARRAYS, CHILDREN, STYLE VIA TAILWIND
+2. FINISHED LESSON 2: LEARNED useState(to rerender components after loading) hook, useEffect(to prevent infinite api calls) hook, service layer(for api calls), .env file(for api URL), state-lift(to grab data from child component to parent)
+3. FINISHED LESSON 3: LEARNED basic-router(for routing paths), router-demo project, state-forward(+useLocation hook to save state and use it later), dynamic-routes(+ useParams hook to grab path-params)

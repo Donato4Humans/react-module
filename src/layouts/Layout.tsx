@@ -3,7 +3,7 @@ import {Outlet} from "react-router-dom";
 
 const Layout = () => {
     return (
-        <div>
+        <div className='bg-gray-600 p-2 flex flex-col text-center'>
             <MenuComponent/>
             <hr/>
             <Outlet/>

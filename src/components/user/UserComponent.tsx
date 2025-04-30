@@ -10,15 +10,15 @@ const UserComponent: FC<UserPropsType> = ({item}) => {
 
     const navigate = useNavigate(); // SECOND APPROACH(ADD ON_CLICK EVENT AND USE BUTTON
     const handleOnClick = () => {
-        navigate('details', {state: item});
+        navigate('posts/' + item.id, {state: item});
     }
 
     return (
-        <div>
+        <div className='flex justify-between w-3xs'>
             <Link to={'details'} state={item}>{item.username}</Link>
         {/*  !!!FIRST APPROACH(LINK COMPONENT) ==  WE SAVE STATE OF USER OBJ TO GRAB IT LATER INSIDE USER-DETAILS PAGE */}
 
-            <button onClick={handleOnClick} className='border-violet-600 bg-gray-600'>---DETAILS</button>
+            <button onClick={handleOnClick} className=' border-2 border-violet-600 bg-gray-600'> --- USER-POSTS</button>
         {/*    !!!SECOND APPROACH*/}
         </div>
     );

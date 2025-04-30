@@ -1,5 +1,6 @@
 import {useLocation} from "react-router-dom";
 import {IUser} from "../models/IUser.ts";
+import UserDetails from "../components/user/UserDetails.tsx";
 
 const UserDetailsPage = () => {
 
@@ -8,7 +9,7 @@ const UserDetailsPage = () => {
 
     return (
         <div>
-            {user.phone}
+            <UserDetails item={user}/>
         </div>
     );
 };
