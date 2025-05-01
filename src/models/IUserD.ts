@@ -57,16 +57,6 @@ interface Bank {
   iban: string;
 }
 
-interface Address {
-  address: string;
-  city: string;
-  state: string;
-  stateCode: string;
-  postalCode: string;
-  coordinates: Coordinates;
-  country: string;
-}
-
 interface Company {
   department: string;
   name: string;
