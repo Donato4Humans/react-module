@@ -9,9 +9,8 @@ export const routes = createBrowserRouter([
     {
         path: '/', element: <Layout/>, children:[
             {index: true, element:      <HomePage/>},
-            {path: 'users', element:    <UsersPage/>, children: [
-                    {path: ':userId/carts', element:    <CartsPage/>}
-                ]},
+            {path: 'users', element:    <UsersPage/>},
+            {path: 'users/:userId/carts', element:    <CartsPage/>}
         ]
     }
 ]);
