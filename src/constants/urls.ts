@@ -4,7 +4,9 @@ export const urls = {
     users: {
         allUsersD: baseUrlD + '/users',
     },
-    posts: {
-        allPostsD: baseUrlD + '/posts',
+    carts: {
+        cartsById: (userId: string) => {
+            return baseUrlD + '/carts/user/' + userId;
+        }
     },
 }

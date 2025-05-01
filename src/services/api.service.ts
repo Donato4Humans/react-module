@@ -1,6 +1,6 @@
 import {urls} from "../constants/urls.ts";
 import {IUserD} from "../models/IUserD.ts";
-import {IPostD} from "../models/IPostD.ts";
+import {ICartD} from "../models/ICartD.ts";
 
 export const userService = {
     getUsersFromD: async (): Promise<IUserD[]> => {
@@ -10,10 +10,10 @@ export const userService = {
     },
 }
 
-export const postService = {
-    getPostsFromD: async (): Promise<IPostD[]> => {
-        const response = await fetch(urls.posts.allPostsD)
+export const cartService = {
+    getCartsOfUserById: async (userId: string): Promise<ICartD[]> => {
+        const response = await fetch(urls.carts.cartsById(userId))
             .then(res => res.json());
-        return response.posts;
+        return response.carts;
     },
 }

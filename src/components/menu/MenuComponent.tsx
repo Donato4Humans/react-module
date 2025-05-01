@@ -7,7 +7,6 @@ const MenuComponent = () => {
             <ul>
                 <li><Link to={'/'}>     HOME</Link></li>
                 <li><Link to={'/users'}>USERS</Link></li>
-                <li><Link to={'/posts'}>POSTS</Link></li>
             </ul>
         </div>
     );
