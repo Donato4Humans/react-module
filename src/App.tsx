@@ -1,15 +1,14 @@
 import './App.css';
-import PaginationComponent from "./components/pagination/PaginationComponent.tsx";
-import UsersComponent from "./components/users/UsersComponent.tsx";
+import {Link, Outlet} from "react-router-dom";
 
-const App = () => {
+const MainLayout = () => {
   return (
     <>
-        APP-MAIN
-        <UsersComponent/>
-        <PaginationComponent/>
+        <Link to={'users?pg=1'}>USERS</Link>
+        <hr/>
+        <Outlet/>
     </>
   );
 };
 
-export default App;
+export default MainLayout;

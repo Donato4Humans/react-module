@@ -5,11 +5,11 @@ type UserPropsType = {
     item: IUser
 }
 
-const UserComponent: FC<UserPropsType> = ({item:{first_name, last_name, avatar}}) => {
+const UserComponent: FC<UserPropsType> = ({item:{id, username, firstName, lastName}}) => {
     return (
         <div className='border-2 border-violet-600 flex flex-col align-middle'>
-            <h3>Full name: {first_name}{last_name}</h3>
-            <img className='w-3xs' src={avatar} alt={last_name}/>
+            <h3 className='bg-red-400'>ID: {id} Full name: {firstName} {lastName}</h3>
+            <p>username: {username}</p>
         </div>
     );
 };

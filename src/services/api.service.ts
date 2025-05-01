@@ -1,8 +1,9 @@
-import {IReqresInResponse} from "../models/IReqresInResponse.ts";
+import {IUserDummyResponse} from "../models/IUserDummyResponse.ts";
 import {IUser} from "../models/IUser.ts";
+import {urls} from "../constants/urls.ts";
 
 export const getUsersByPage = async (page: string): Promise<IUser[]> => {
-    const response: IReqresInResponse = await fetch('https://reqres.in/api/users?page=' + page, {headers: {"x-api-key": "reqres-free-v1"}})
+    const response: IUserDummyResponse = await fetch(urls.usersByPage(page))
         .then(res => res.json());
-    return response.data;
+    return response.users;
 };
