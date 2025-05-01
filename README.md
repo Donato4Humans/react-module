@@ -52,12 +52,10 @@ export default tseslint.config({
   },
 })
 ```
-#Uyj2GjyDDF - TASK 3
+#tntlwuxFxI5 TASK 4
 
-Побудувати меню, з можливістю переходу на наступні маршрути:
-/users/jsonplaceholder – відобразити всі об’єкти з  https://jsonplaceholder.typicode.com/users
-/users/dummyjson – відобразити всі об’єкти з https://dummyjson.com/users
-/posts/jsonplaceholder- відобразити всі об’єкти з  https://jsonplaceholder.typicode.com/posts
-/posts/dummyjson – відобразити всі об’єкти з https://dummyjson.com/posts
-/comments/jsonplaceholder – відобразити всі об’єкти з https://jsonplaceholder.typicode.com/comments
-/comments/dummyjson – відобразити всі об’єкти з https://dummyjson.com/comments
+Маршрутизація.
+Є наступні сторінки: 
+UsersPage – відтворює користувачів з api dummyjson.com (довільна розмітка та кількість інфи про об’єкт) 
+PostsPage – відтворює пости з  api dummyjson.com (довільна розмітка та кількість інфи про об’єкт)
+Відтворювати тільки перший відданий пул об’єктів (30 об’єктів чи скільки віддає апі) (без пагінації і не звертаючи увагу на залишки)
