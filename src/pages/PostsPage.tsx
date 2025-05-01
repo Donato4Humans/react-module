@@ -1,11 +1,11 @@
-import {Outlet} from "react-router-dom";
+import PostsDComponent from "../components/posts/PostsDComponent.tsx";
 
 const PostsPage = () => {
     return (
         <div>
             POSTS-PAGE-CONTENT
             <hr/>
-            <Outlet/>
+            <PostsDComponent/>
         </div>
     );
 };

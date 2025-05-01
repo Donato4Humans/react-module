@@ -1,5 +1,5 @@
 import {FC} from "react";
-import {IPostD} from "../../../models/IPostD.ts";
+import {IPostD} from "../../models/IPostD.ts";
 
 type PostPropsType  = {
     item: IPostD
