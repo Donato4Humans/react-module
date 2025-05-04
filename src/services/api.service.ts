@@ -26,9 +26,9 @@ axiosInstance.interceptors.request.use((requestObject) => {
 // ----------------------------------- SERVICES ------------------------------
 
 export const loginService = {
-    login: async ({username, password, expiresInMins}: LoginDataType): Promise<IUserWithTokens> => {
-        const {data: userWithTokens} = await axiosInstance.post<IUserWithTokens>('/login', {username, password, expiresInMins});
-        console.log('login', userWithTokens);
+    login: async (formLoginData: LoginDataType): Promise<IUserWithTokens> => {
+        const {data: userWithTokens} = await axiosInstance.post<IUserWithTokens>('/login', formLoginData);
+        console.log('login successful. YOU CAN GO TO AUTH-RESOURCES PAGE', userWithTokens);
         localStorage.setItem('user', JSON.stringify(userWithTokens));
         return userWithTokens;
     },
@@ -45,7 +45,6 @@ export const loginService = {
 export const authResourcesService = {
     getAuthProducts: async (): Promise<IProduct[]> => {
         const {data: response} = await axiosInstance.get<IProductResponseModel>('/products');
-        // console.log(response.products);
         return response.products;
     }
 }
