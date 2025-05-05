@@ -5,3 +5,11 @@
   padding: 2rem;
   text-align: center;
 }
+
+.light{
+    background-color: antiquewhite;
+}
+
+.dark{
+    background-color: dimgray;
+}
