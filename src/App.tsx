@@ -17,9 +17,7 @@ const App = () => {
 
             counterValue: counter, // HERE WE TIE IT WITH USE-STATE VALUE AND NOW OUR COMP-S ARE TIED AND CAN MANIPULATE THIS VALUE
 
-            increment:(obj) => {
-                setCounter(++obj);
-            }
+            increment:(obj) => {setCounter(++obj);}
         }}>
             <LeftBranch/>
             <RightBranch/>
