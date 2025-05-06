@@ -8,7 +8,7 @@ const UsersPage = () => {
     // THIS PART IS LIKE state from useState hook
     const usersSlice = useAppSelector(storeStateRef => storeStateRef.userSlice);
     console.log(usersSlice);
-    const { users } = usersSlice;
+    const { users, loadState } = usersSlice;
 
     const dispatch = useAppDispatch(); // and THIS PART IS LIKE setState from useState hook
 
@@ -28,7 +28,8 @@ const UsersPage = () => {
 
     return (
         <div>
-            USERS-PAGE
+            {/*CHECK IF LOAD-STATE IS FALSE TO SHOW SIMPLE PRELOADER TEXT*/}
+            USERS-PAGE { !loadState && <div>LOADING...</div>}
             <hr/>
             { // USER-COMPONENT FILLER
                 users.map((user) => {
